@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Native Plugins
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab bottom center>
+    <button ion-fab color="{{isOn ? 'secondary : 'light'}}" (click)="toggleFlash()">
+      <ion-icon name="{{isOn ? 'and-flash' : 'and-flash-outline'"></ion-icon>
+    </button>
+
+    <button onclick="window.plugins.insomnia.keepAwake()">keep awake</button>
+    <button onclick="window.plugins.insomnia.allowSleepAgain()">allow sleep again</button>
+  </ion-fab>
+</ion-content>
